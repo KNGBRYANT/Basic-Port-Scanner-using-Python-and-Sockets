@@ -1,9 +1,9 @@
 using my ip address.
 The result is as follows:
 
-Enter IP address or domain to scan: 192.168.28.20
+Enter IP address or domain to scan: ***.***.**.**
 
-Scanning 192.168.28.20...
+Scanning  ***.***.**.**...
 
 Port 135 is OPEN
 Port 139 is OPEN
