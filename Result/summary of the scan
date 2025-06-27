@@ -1,0 +1,23 @@
+# Why Closing Unused Ports Matters
+
+Ports 135, 139, and 445 were found open during the scan.  
+These ports are commonly used by Windows networking services.  
+If not in use, they should be closed to reduce security risks.  
+
+- Port 135 is used for Microsoft RPC (Remote Procedure Call).  
+- Ports 139 and 445 are used for file sharing (SMB protocol).  
+- These ports have been targets of major attacks like WannaCry.  
+
+Leaving them open can expose systems to malware and exploits.  
+Closing unused ports helps reduce your attack surface and improve system security.  
+
+---
+
+# How I Closed the Ports
+
+I disabled SMB and RPC-related services from the system settings.  
+Then I used the Windows Defender Firewall to block incoming connections:  
+- Opened **Windows Defender Firewall with Advanced Security**  
+- Went to **Inbound Rules** and created new rules to block ports 135, 139, and 445  
+- Applied the rule to all profiles (Domain, Private, Public)  
+- Verified using a second scan that the ports were no longer open
